@@ -30,7 +30,7 @@ export const UserStore = types
         self.perPage = Number(response.data.per_page);
         self.total = Number(response.data.total);
         self.totalPages = Number(response.data.total_pages);
-        self.blockedUsers = [];
+        self.blockedUsers = cast([]);
       }
     }),
     blockUser(id: number) {
